@@ -25,7 +25,7 @@ namespace MyEditor
                 System.IO.StreamReader(openFileDialog1.FileName); //this takes away from having to type the file path
                 //MessageBox.Show(sr.ReadToEnd()); //returns back to file path 
                 //sr.Close();
-
+                
                 rtb.Text = sr.ReadToEnd();
                 sr.Close();
             }
